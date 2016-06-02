@@ -84,7 +84,7 @@ body {
     #bradContainer #bradContent #bradSparkle {
       background-image: url(../img/burst.png);
       position: absolute;
-      top: 34px;
+      top: 36px;
       left: 112px;
       width: 94px;
       height: 91px; }
@@ -113,14 +113,14 @@ body {
       background-image: url(../img/t4.png);
       position: absolute;
       top: 48px;
-      left: 173px;
+      left: 175px;
       width: 103px;
       height: 69px; }
     #bradContainer #bradContent #t5 {
       background-image: url(../img/t5.png);
       position: absolute;
-      top: 46px;
-      left: 173px;
+      top: 50px;
+      left: 175px;
       width: 109px;
       height: 94px; }
     #bradContainer #bradContent #p1 {

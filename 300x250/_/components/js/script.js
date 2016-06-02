@@ -19,15 +19,17 @@ function startAd(){
         .to("#p2a", .6, {x:-80,ease: Power3.easeIn}, 5.3);
     
     var ftl = new TimelineLite();
-    ftl.from("#bradSparkle", .6, {opacity:0, rotation:180});
+    ftl.from("#bradFlare", .6, {opacity:0})
+    .to("#bradFlare", .6, {x: -76,ease: Power3.easeIn}, .3)
+        .from("#bradSparkle", .6, {opacity:0, rotation:180}, .7);
     
     var ctl = new TimelineLite();
     ctl.from("#bradCtaButton", .6, { opacity:0,ease: Power3.easeIn});
     
     tl.add(ttl, 0);
     tl.add(ptl, 3);
-    tl.add(ftl, 8.7);
-    tl.add(ctl, 12);
+    tl.add(ftl, 8);
+    tl.add(ctl, 11.6);
     
     tl.totalDuration(15);
     
@@ -57,6 +59,7 @@ function checkInit() {
                function onInit() {
     
     TweenLite.set("#bradContainer", {opacity:1});
+                   TweenLite.set("#bradFlare", {opacity:.7});
     addListeners();
     startAd();
               } 
