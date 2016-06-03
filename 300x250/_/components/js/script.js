@@ -1,37 +1,38 @@
 function startAd(){  
            var ttl = new TimelineLite();
     ttl.from("#t1", .2, {opacity:0})
-        .to("#t1", .6, {opacity:0}, 3.2)
-        .from("#t2", .6, {opacity:0}, 3.2)
-        .to("#t2", .6, {opacity:0}, 5)
-        .from("#t3", .6, {opacity:0}, 5)
-        .to("#t3", .6, {opacity:0}, 7)
-        .from("#t4", .6, {opacity:0}, 8.7)
-        .to("#t4", .6, {opacity:0, y:-50,ease: Power3.easeIn}, 11.6)
-        .from("#t5", .6, {opacity:0}, 12);
+        .to("#t1", .6, {opacity:0}, 2.5)
+        .from("#t2", .6, {opacity:0}, 2.5)
+        .to("#t2", .6, {opacity:0}, 4.2)
+        .from("#t3", .6, {opacity:0, y:250}, 3.9)
+        .to("#t3", .6, {opacity:0}, 6.2)
+        .from("#t4", .6, {opacity:0}, 7.4)
+        .to("#t4", .6, {opacity:0, y:-50,ease: Power3.easeOut}, 9.3)
+        .from("#t5", .6, {opacity:0}, 9.3);
     
     var ptl = new TimelineLite();
-    ptl.from("#p1", .6, {opacity:0, y:-190,ease: Power3.easeIn})
-        .from("#p2", .6, {opacity:0, y:-190,ease: Power3.easeIn}, 3.8)
-        .to("#p2", .4, {opacity:0, x:-5, y:-6,ease: Power3.easeIn}, 4.8)
-        .from("#p2a", .4, {opacity:0, x:5, y:6,ease: Power3.easeIn}, 4.8)
-        .to("#p1", .6, {x:-80,ease: Power3.easeIn}, 5.3)
-        .to("#p2a", .6, {x:-80,ease: Power3.easeIn}, 5.3);
+    ptl.from("#p1", .6, {opacity:0, y:-190,ease: Power3.easeOut})
+        .from("#p2", .6, {opacity:0, y:-190,ease: Power3.easeOut}, 3.4)
+        .to("#p2", .4, {opacity:0, x:-5, y:-6,ease: Power3.easeOut}, 4.4)
+        .from("#p2a", .4, {opacity:0, x:5, y:6,ease: Power3.easeOut}, 4.4)
+        .to("#p1", .6, {x:-80,ease: Power3.easeOut}, 4.8)
+        .to("#p2a", .6, {x:-80,ease: Power3.easeOut}, 4.8);
     
     var ftl = new TimelineLite();
     ftl.from("#bradFlare", .6, {opacity:0})
-    .to("#bradFlare", .6, {x: -76,ease: Power3.easeIn}, .3)
-        .from("#bradSparkle", .6, {opacity:0, rotation:180}, .7);
+    .to("#bradFlare", .6, {x: -76,ease: Power3.easeOut}, .4)
+    .from("#bradSparkle", .6, {opacity:0, rotation:180}, .6)
+    .to("#bradSparkle", .8, {opacity:.5}, 1.4);
     
     var ctl = new TimelineLite();
-    ctl.from("#bradCtaButton", .6, { opacity:0,ease: Power3.easeIn});
+    ctl.from("#bradCtaButton", .6, { opacity:0,ease: Power3.easeOut});
     
     tl.add(ttl, 0);
-    tl.add(ptl, 3);
-    tl.add(ftl, 8);
-    tl.add(ctl, 11.6);
+    tl.add(ptl, 2.5);
+    tl.add(ftl, 6.9);
+    tl.add(ctl, 9.3);
     
-    tl.totalDuration(15);
+    tl.totalDuration(13);
     
 };
 
