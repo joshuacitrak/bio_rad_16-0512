@@ -81,11 +81,11 @@ body {
       left: 0px;
       width: 400px;
       height: 250px; }
-    #bradContainer #bradContent #bradSparkle {
+    #bradContainer #bradContent #bradSparkle, #bradContainer #bradContent #bradSparkle1 {
       background-image: url(../img/burst.png);
       position: absolute;
       top: 36px;
-      left: 112px;
+      left: 190px;
       width: 94px;
       height: 91px; }
     #bradContainer #bradContent #t1 {
@@ -140,10 +140,10 @@ body {
     #bradContainer #bradContent #p2a {
       background-image: url(../img/p2a.png);
       position: absolute;
-      top: 26px;
-      left: 63px;
-      width: 212px;
-      height: 214px; }
+      top: 25px;
+      left: 77px;
+      width: 198px;
+      height: 220px; }
     #bradContainer #bradContent #bradFooter {
       background: #fff;
       width: 300px;
